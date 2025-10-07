@@ -1,11 +1,9 @@
 // src/lib/server/db/index.ts
 import { neon } from '@neondatabase/serverless';
 import { drizzle } from 'drizzle-orm/neon-http';
-
+import { env } from '$env/dynamic/private';
 // or
 // import { DATABASE_URL } from '$env/static/private';
 
-const sql = neon(
-	'postgresql://neondb_owner:npg_zWx4SPKs9rHO@ep-curly-haze-ad9gakr5-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require'
-); // or DATABASE_URL if using static
+const sql = neon(env.DATABASE_URL); // or DATABASE_URL if using static
 export const db = drizzle(sql);
