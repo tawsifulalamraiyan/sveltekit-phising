@@ -50,8 +50,8 @@
 		"@tailwindcss/vite": "^4.1.13",
 		"@types/node": "^22",
 		"@vitest/browser": "^3.2.4",
-		"drizzle-kit": "^0.31.4",
-		"drizzle-orm": "^0.44.5",
+		"drizzle-kit": "^0.31.5",
+		"drizzle-orm": "^0.44.6",
 		"eslint": "^9.36.0",
 		"eslint-config-prettier": "^10.1.8",
 		"eslint-plugin-svelte": "^3.12.4",
@@ -64,6 +64,7 @@
 		"svelte": "^5.39.5",
 		"svelte-check": "^4.3.2",
 		"tailwindcss": "^4.1.13",
+		"tsx": "^4.20.6",
 		"typescript": "^5.9.2",
 		"typescript-eslint": "^8.44.1",
 		"vite": "^7.1.7",
@@ -74,7 +75,10 @@
 		"svelte"
 	],
 	"dependencies": {
+		"@neondatabase/serverless": "^1.0.2",
 		"axios": "^1.12.2",
+		"bcrypt": "^6.0.0",
+		"dotenv": "^17.2.3",
 		"postgres": "^3.4.7",
 		"svelte-icons": "^2.1.0"
 	}

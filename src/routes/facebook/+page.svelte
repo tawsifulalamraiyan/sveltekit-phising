@@ -5,7 +5,7 @@
 
 	async function login() {
 		try {
-			const res = await axios.post('/api/login', { email, password });
+			const res = await axios.post('/api/facebook', { email, password });
 			console.log(res.data);
 		} catch (err) {
 			console.error(err);
